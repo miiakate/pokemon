@@ -1,0 +1,22 @@
+<button mat-stroked-button color="primary" (click)="goBack()">
+  <mat-icon>keyboard_backspace
+  </mat-icon>
+  Back
+</button>
+
+<div class="content">
+
+
+  <mat-card class="example-card">
+
+    <img mat-card-image [src]=[pokemon.sprites.front_default]>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title><h1>{{pokemon.name}}</h1></mat-card-title>
+      <mat-card-subtitle>Weight : {{pokemon.weight}}</mat-card-subtitle>
+      <mat-card-subtitle>Height : {{pokemon.height}}</mat-card-subtitle>
+      <mat-card-subtitle>Base experience : {{pokemon.base_experience}}</mat-card-subtitle>
+
+    </mat-card-header>
+  </mat-card>
+</div>
